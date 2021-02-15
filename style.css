@@ -1,0 +1,295 @@
+body{
+
+  background-color: #c6e2dd;
+  margin: 0;
+  font-family: Monospace;
+  font-size: 13px;
+  line-height: 24px;
+  overscroll-behavior: none;
+  text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+
+}
+
+#spinner {
+  /*animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 60s;*/
+    text-shadow: 2px 2px 4px #000000;
+
+  text-align: center;
+  color: pink;
+  font-size: 264px;
+  margin-top: 35%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  z-index: 0;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+  0 { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}
+
+#date_title {
+  position: absolute;
+  top: 25%;
+  width: 11%;
+  height: 13%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: yellow;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+        font-size:17px;
+            color: #ffc40c;
+}
+
+#date_reported {
+  position: absolute;
+  top: 29%;
+  width: 10.5%;
+  height: 8%;
+  left: 0.28%;
+  padding: 10px;
+
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: #fffacd;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+vertical-align: middle;
+line-height: 60px;       /* The same as your div height */
+    color: #ffc40c;
+    font-size:24px;
+
+}
+
+#deaths {
+  position: absolute;
+  top: 50%;
+  width: 11%;
+  height: 13%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: red;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+        font-size:12px;
+            color: #FBCEB1;
+
+
+}
+
+#deaths_number {
+  position: absolute;
+  top: 54%;
+  width: 10.5%;
+  height: 8%;
+  left: 0.28%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: #fd5c63;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+vertical-align: middle;
+line-height: 60px;       /* The same as your div height */
+    color: #FBCEB1;
+    font-size:28px;
+
+}
+
+#state_title {
+  position: absolute;
+  top: 75%;
+  width: 11%;
+  height: 13%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: green;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+        font-size:17px;
+            color: #39ff14;
+
+
+}
+
+#state_reported {
+  position: absolute;
+  top: 79%;
+  width: 10.5%;
+  height: 8%;
+  left: 0.28%;
+  padding: 10px;
+
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: #87A96B;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+vertical-align: middle;
+line-height: 60px;       /* The same as your div height */
+    color: #39ff14;
+    font-size:30px;
+
+
+}
+
+#source_title {
+  position: absolute;
+  top: 75%;
+  width: 11%;
+  height: 13%;
+  left: 89%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: white;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+        font-size:17px;
+            color: #A9A9A9;
+
+
+}
+
+#source_image {
+  position: absolute;
+  top: 79%;
+  width: 10.5%;
+  height: 8%;
+  left: 89.28%;
+  padding: 10px;
+    background-image: url("tracking.png");
+     background-size: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: black;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+vertical-align: middle;
+line-height: 60px;       /* The same as your div height */
+    color: #39ff14;
+    font-size:30px;
+
+
+}
+
+#update_title {
+  position: absolute;
+  top: 25%;
+  width: 11%;
+  height: 13%;
+  left: 89%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: #F9812A;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+        font-size:18px;
+            color: #FFFDD0;
+}
+
+#update_time {
+  position: absolute;
+  top: 29%;
+  width: 10.5%;
+  height: 8%;
+  left: 89.28%;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  background-color: orange;
+    opacity: 0.9;
+    z-index:10000; /* TODO Solve this in HTML */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+vertical-align: middle;
+line-height: 60px;      /* The same as your div height */
+    color: #FFFDD0;
+    font-size:30px;
+
+
+}
+
