@@ -187,24 +187,24 @@ function mouse(e) {
   }
   deeex=has_focus?Math.floor(-1.5+4*(x-sleft)/swide):0;
 }
-	var request = new XMLHttpRequest();
 
-//request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
-//request.open('GET', 'https://data.sfgov.org/resource/tvq9-ec9w.json', true);
-request.open('GET', 'https://api.covidtracking.com/v1/states/ca/current.json', true);
+//ajax json no longer working because api disabled cors
+/*	var request = new XMLHttpRequest();
+
+
+request.open('GET', 'https://api.covidtracking.com/v2/states/ca/2021-01-10/simple.json', true);
+
+
+
 request.onload = function () {
 
 
-  // Begin accessing JSON data here
+
   data = JSON.parse(this.response);
 
-  //var lastEntry = data[0].case_count;
-
-//console.log(data.death);
 
 total = data.death;
-/*console.log(total);
-console.log(total * 75);*/
+
 
 document.getElementById("date_title").textContent = "DATE REPORTED";
 var str = data.dateModified;
@@ -213,6 +213,7 @@ if(str.length > 10) str = str.substring(0,10);
  document.getElementById("date_reported").textContent = str;
 
   document.getElementById("deaths_number").textContent = data.death;
+
   document.getElementById("deaths").textContent = "TOTAL COVID-19 DEATHS";
 
   document.getElementById("state_reported").textContent = data.state;
@@ -220,7 +221,6 @@ if(str.length > 10) str = str.substring(0,10);
 
                   document.getElementById("source_title").textContent = "DATA SOURCE";
 
-                       //document.getElementById("update_title").textContent = "TIME TO UPDATE";
 
 
 
@@ -234,7 +234,7 @@ if(str.length > 10) str = str.substring(0,10);
 }
 
 
-request.send();
+request.send();*/
 
 //setInterval(myFunction, 3600000);
 //setInterval(myFunction, 3000);
@@ -279,6 +279,24 @@ function myFunction(){
 
 <!-- partial -->
   
+<script type="text/javascript">
+
+	document.getElementById("date_title").textContent = "DATE REPORTED";
+	 document.getElementById("date_reported").textContent = "2021-03-07";
+
+
+	  document.getElementById("spinner").innerHTML = 54124;
+	  document.getElementById("deaths").textContent = "TOTAL COVID-19 DEATHS";
+	  document.getElementById("deaths_number").textContent = 54124;
+
+	  document.getElementById("state_reported").textContent = "CA";
+      document.getElementById("state_title").textContent = "STATE";
+
+                  document.getElementById("source_title").textContent = "DATA SOURCE";
+
+
+
+</script>
 
 </body>
 </html>
